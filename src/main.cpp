@@ -2,7 +2,7 @@
  *     File Name           :     src/main.cpp
  *     Created By          :     anon
  *     Creation Date       :     [2016-01-14 14:23]
- *     Last Modified       :     [2016-09-01 08:59]
+ *     Last Modified       :     [2016-09-01 09:27]
  *     Description         :      
  **********************************************************************************/
 #include <stdio.h>
@@ -23,6 +23,7 @@ protocols\n");
   printf("-e or --encrypt [FILE NAME]\n");
   printf("-d or --decrypt [FILE NAME]\n");
   printf("-o or --output [FILE NAME] OPTIONAL\n");
+  printf("-t or --type XOR|DES default:XOR\n");
   printf("Example: crypter -e some_binary_file -o nothing_to_see_here\n");
   printf("======================================\n");
 }
@@ -32,6 +33,7 @@ int main(int argc, char **argv) {
 
   static struct option long_opts[] = {
     {"help", no_argument, 0, 'h' },
+    {"type", required_argument, 0, 't'},
     {"encrypt", required_argument, 0, 'e' },
     {"decrypt", required_argument, 0, 'd' },
     {"output", optional_argument, 0, 'o' }
@@ -49,18 +51,18 @@ int main(int argc, char **argv) {
         show_help();
         break;
       case 'o':
-        assert(optarg != NULL);
         output_file_name = optarg; 
         break;
       case 'e':
-        assert(optarg != NULL);
         input_file = optarg;
         e = 1;
         break;
       case 'd':
-        assert(optarg != NULL);
         d = 1;
         input_file = optarg;
+        break;
+      case 't':
+
         break;
     }
 

@@ -30,6 +30,6 @@ c++ compiler
 
 ####Note on encryption
 
-So XORing the file is not encryption its obfusication so that the binary file cannot be parsed correctly by scanners. 
+So XORing the file is not really encryption.Its closer to obfusication so that the binary file cannot be parsed correctly by scanners. 
 I will work on implementing optional actual encryption with reverse DES or something similar that will actually seal the payload, but this is a WIP.
 
