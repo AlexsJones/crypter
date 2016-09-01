@@ -2,7 +2,7 @@
  *     File Name           :     /home/anon/Work/crypter/src/file_encrypter.cpp
  *     Created By          :     anon
  *     Creation Date       :     [2016-08-31 11:50]
- *     Last Modified       :     [2016-09-01 09:09]
+ *     Last Modified       :     [2016-09-01 11:16]
  *     Description         :      
  **********************************************************************************/
 

@@ -1,0 +1,1 @@
+i686-w64-mingw32-c++ src/*.cpp -I../src -o crypter_win.exe -static
