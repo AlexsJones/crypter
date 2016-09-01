@@ -1,5 +1,5 @@
 # Compiled Object files
-crypter
+crypter*
 output
 cmake_install.cmake
 CMakeCache*
