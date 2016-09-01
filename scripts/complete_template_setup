@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -z "$1"  ]; then 
+  echo "Requires an argument for project name"
+  exit 0
+fi
+
+PROJECTNAME=$1
+sed -i "s/NOT_SET/$PROJECTNAME/g" CMakeLists.txt
+rm -rf .git
