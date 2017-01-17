@@ -2,13 +2,14 @@
  *     File Name           :     src/main.cpp
  *     Created By          :     anon
  *     Creation Date       :     [2016-01-14 14:23]
- *     Last Modified       :     [2016-09-01 09:27]
+ *     Last Modified       :     [2017-01-17 12:02]
  *     Description         :      
  **********************************************************************************/
 #include <stdio.h>
 #include <unistd.h>
 #include <getopt.h>
 #include <fstream>
+#include <cstdio>
 #include <iostream>
 #include <assert.h>
 #include <cstdlib>
@@ -29,6 +30,12 @@ protocols\n");
 }
 int main(int argc, char **argv) {
 
+
+    printf("    _____              __          \n");
+    printf("   / ___/_____ _____  / /____ ____ \n");
+    printf("  / /__/ __/ // / _ \\/ __/ -_) __/\n");
+    printf("  \\___/_/  \\_, / .__/\\__/\\__/_/   \n");
+    printf("          /___/_/                 \n");
   int opt_index =0,c=0;
 
   static struct option long_opts[] = {
